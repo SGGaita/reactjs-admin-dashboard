@@ -7,4 +7,4 @@ const Single = () => {
   )
 }
 
-export default Single
+export {Single}

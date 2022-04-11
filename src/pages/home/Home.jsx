@@ -1,12 +1,15 @@
 import React from 'react'
 import "./home.scss"
+import { Sidebar, Navbar } from "../../components"
 
 const Home = () => {
   return (
     <div className="home">
-        <h1 className="title">React Admin Dashboard Home</h1>
+      <Sidebar />
+      <div className="homeContainer">Container</div>
     </div>
+    
   )
 }
 
-export default Home
+export { Home }

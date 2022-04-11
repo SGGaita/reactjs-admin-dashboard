@@ -7,4 +7,4 @@ const New = () => {
   )
 }
 
-export default New
+export {New}
