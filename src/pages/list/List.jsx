@@ -1,9 +1,16 @@
 import React from 'react'
 import "./list.scss"
+import {Sidebar,Navbar,Datatable} from "../../components"
 
 const List = () => {
   return (
-    <div>List</div>
+    <div className="list">
+      <Sidebar/>
+      <div className="listContainer">
+        <Navbar/>
+        <Datatable/>
+      </div>
+    </div>
   )
 }
 

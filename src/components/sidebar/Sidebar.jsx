@@ -12,67 +12,74 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import FeedIcon from '@mui/icons-material/Feed';
 import LogoutIcon from '@mui/icons-material/Logout';
 import "./sidebar.scss"
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
     return (
         <div className="sidebar">
             <div className="top">
-                <span className="logo">AS-Admin v1.0</span>
+                <Link to="/" style={{ textDecoration: "none" }}>
+                    <span className="logo">AS-Admin v1.0</span>
+                </Link>
             </div>
             <hr />
             <div className="center">
                 <ul>
                     <p className="title">MAIN</p>
                     <li>
-                        <DashboardIcon  className="icon"/>
+                        <DashboardIcon className="icon" />
                         <span>Dashboard</span>
                     </li>
                     <p className="title">LISTS</p>
+                    <Link to="/users" style={{ textDecoration: "none" }}>
+                        <li>
+                            <PersonOutlineOutlinedIcon className="icon" />
+                            <span>Users</span>
+                        </li>
+                    </Link>
+                    <Link to="/products" style={{ textDecoration: "none" }}>
+                        <li>
+                            <StoreIcon className="icon" />
+                            <span>Products</span>
+                        </li>
+                    </Link>
                     <li>
-                        <PersonOutlineOutlinedIcon className="icon" />
-                        <span>Users</span>
-                    </li>
-                    <li>
-                        <StoreIcon className="icon"/>
-                        <span>Products</span>
-                    </li>
-                    <li>
-                        <CreditCardIcon className="icon"/>
+                        <CreditCardIcon className="icon" />
                         <span>Orders</span>
                     </li>
                     <li>
-                        <DeliveryDiningIcon className="icon"/>
+                        <DeliveryDiningIcon className="icon" />
                         <span>Delivery</span>
                     </li>
                     <p className="title">USEFUL LINKS</p>
                     <li>
-                        <AssessmentIcon className="icon"/>
+                        <AssessmentIcon className="icon" />
                         <span>Statistics</span>
                     </li>
                     <li>
-                        < NotificationsNoneIcon className="icon"/>
+                        < NotificationsNoneIcon className="icon" />
                         <span>Notifications</span>
                     </li>
                     <li>
-                        < FavoriteBorderIcon className="icon"/>
+                        < FavoriteBorderIcon className="icon" />
                         <span>System Health</span>
                     </li>
                     <li>
-                        <FeedIcon className="icon"/>
+                        <FeedIcon className="icon" />
                         <span>Logs</span>
                     </li>
                     <p className="title">SERVICE</p>
                     <li>
-                        <SettingsIcon className="icon"/>
+                        <SettingsIcon className="icon" />
                         <span>Settings</span>
                     </li>
                     <p className="title">USER</p>
                     <li>
-                        <AssignmentIndOutlinedIcon className="icon"/>
+                        <AssignmentIndOutlinedIcon className="icon" />
                         <span>Profile</span>
                     </li>
                     <li>
-                        <LogoutIcon className="icon"/>
+                        <LogoutIcon className="icon" />
                         <span>Logout</span>
                     </li>
                 </ul>
