@@ -1,6 +1,6 @@
 import React from 'react'
 import "./home.scss"
-import { Sidebar, Navbar, Widgets,Chart, Featured } from "../../components"
+import { Sidebar, Navbar, Widgets, Chart, Featured, List } from "../../components"
 
 const Home = () => {
   return (
@@ -18,8 +18,14 @@ const Home = () => {
 
         {/*charts*/}
         <div className="charts">
-          <Featured/>
-          <Chart/>
+          <Featured />
+          <Chart />
+        </div>
+
+        {/*list*/}
+        <div className="listContainer">
+          <div className="listTitle">Latest Transactions</div>
+          <List />
         </div>
       </div>
     </div>

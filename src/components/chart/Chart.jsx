@@ -27,7 +27,7 @@ const Chart = () => {
           </linearGradient>
         </defs>
         <XAxis dataKey="name" stroke="gray"/>
-        <CartesianGrid strokeDasharray="3 3" className="chartGrid"/>
+        <CartesianGrid strokeDasharray="3 3" className="chartGrid"/>v
         <Tooltip />
         <Area type="monotone" dataKey="Total" stroke="#8884d8" fillOpacity={1} fill="url(#total)" />
       </AreaChart>
