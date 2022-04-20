@@ -6,6 +6,15 @@ import { Link } from "react-router-dom";
 
 
 const Datatable = () => {
+
+    const actionColumn =[{field:"action", headerName:"Action", sortable:false, width:200, renderCell:()=>{
+        return (
+            <div className="cellAction">
+                <div className="viewButton">View</div>
+                <div className="deleteButton">Delete</div>
+            </div>
+        )
+    }}]
     return (
         <div className="datatable">
             <div className="datatableTitle">
@@ -16,9 +25,9 @@ const Datatable = () => {
             </div>
             <DataGrid
                 rows={userRows}
-                columns={userColumns}
-                pageSize={5}
-                rowsPerPageOptions={[5]}
+                columns={userColumns.concat(actionColumn)}
+                pageSize={10}
+                rowsPerPageOptions={[10]}
                 checkboxSelection
             />
         </div>

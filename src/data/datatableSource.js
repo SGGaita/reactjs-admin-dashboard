@@ -23,6 +23,7 @@ export const userColumns = [
       field: "age",
       headerName: "Age",
       width: 100,
+      editable:true,
     },
     {
       field: "status",
