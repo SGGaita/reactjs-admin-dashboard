@@ -1,11 +1,15 @@
 import React from 'react'
 import "./new.scss"
-import {Sidebar,Navbar} from "../../components"
+import { Sidebar, Navbar } from "../../components"
 
 const New = () => {
   return (
-      <div className="">New</div>
+    <div className="new">
+      <Sidebar />
+      <div className="newContainer">
+      </div>
+    </div>
   )
 }
 
-export {New}
+export { New }
